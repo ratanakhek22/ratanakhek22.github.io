@@ -1,0 +1,69 @@
+:root {
+  --main-color-black: #3c4043;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.frame-container {
+  flex: 1;
+  padding: 0rem 2vw;
+  padding-top: 2rem;
+  display: flex;
+}
+
+#map {
+  flex: 1;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  color: var(--main-color-black);
+}
+
+.header-container {
+  border-bottom: solid 1px var(--main-color-black);
+  width: 60%;
+}
+
+.button-container {
+  align-self: center;
+  padding: 5vh;
+}
+
+input[type="button"] {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 4rem;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  color: var(--main-color-black);
+  cursor: pointer;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.5rem 4rem;
+}
+
+input[type="button"]:hover {
+  color: white;
+  background-color: black;
+}
+
+input[type="button"]:active {
+  color: white;
+  background-color: red;
+}
