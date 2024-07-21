@@ -30,7 +30,7 @@ function updateMap(event, lat, long) {
 
   if (lat) {
     navigator.geolocation.getCurrentPosition((pos) => {
-      header.textContent = "Success";
+      header.textContent = "Circle Created";
 
       let radiusCircle = distance(
         pos.coords.longitude,
@@ -45,8 +45,6 @@ function updateMap(event, lat, long) {
         radius: radiusCircle * 1000,
       }).addTo(map);
     });
-  } else {
-    header.textContent = "Wrong Code";
   }
 }
 
@@ -73,6 +71,9 @@ function getCoords() {
       long = 0;
       break;
   }
+  lat
+    ? (header.textContent = "Code: Success")
+    : (header.textContent = "Code: Failure");
 }
 
 function createCircles() {}
