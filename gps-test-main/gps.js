@@ -13,7 +13,7 @@ function distance(lon1, lat1, lon2, lat2) {
   return d;
 }
 
-/** Converts numeric degrees to radians */
+// Converts numeric degrees to radians / Creates the toRad method
 if (typeof Number.prototype.toRad === "undefined") {
   Number.prototype.toRad = function () {
     return (this * Math.PI) / 180;
@@ -76,17 +76,17 @@ function getCoords() {
     : (header.textContent = "Code: Failure");
 }
 
-function createCircles() {}
+// Initalize Variables
 
 let lat = 0;
 let long = 0;
-
-let circles = [];
 
 const buttonMain = document.querySelector(".button-draw");
 const buttonGo = document.querySelector(".button-go");
 const header = document.querySelector("h1");
 const numberInput = document.querySelector(".number-input");
+
+// Initalize Map
 
 var map = L.map("map").fitWorld();
 
@@ -94,6 +94,8 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
   maxZoom: 19,
   attribution: "© OpenStreetMap",
 }).addTo(map);
+
+// Event Listeners
 
 buttonGo.addEventListener("mouseup", (event) => {
   getCoords();
