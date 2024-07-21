@@ -7,7 +7,8 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <title>GPS Tool</title>
-    <script src="./gps-test-main/index.js" defer></script>
+    <script src="./gps-test-main/gps.js" defer></script>
+    <script src=""></script>
     <link rel="stylesheet" href="./gps-test-main/styles.css" />
 
     <!-- Leaflet CSS Sheet -->
@@ -34,8 +35,18 @@
     <div class="frame-container">
       <div id="map"></div>
     </div>
-    <div class="button-container">
-      <input type="button" value="Draw Circle" />
-    </div>
+    <footer>
+      <div class="left-container"></div>
+      <div class="middle-container">
+        <input type="button" value="Draw Circle" class="button-draw" />
+      </div>
+      <div class="right-container">
+        <div class="input-text">Enter your code below:</div>
+        <div class="number-input-container">
+          <input type="number" name="Special Code" class="number-input" />
+          <input type="button" value="Go" class="button-go" />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -2,6 +2,10 @@
   --main-color-black: #3c4043;
 }
 
+* {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+}
+
 body {
   height: 100vh;
   display: flex;
@@ -26,7 +30,6 @@ header {
   padding: 1rem;
   font-size: 1rem;
   font-weight: 700;
-  font-family: "Google Sans", Roboto, Arial, sans-serif;
   display: flex;
   justify-content: center;
   color: var(--main-color-black);
@@ -37,13 +40,51 @@ header {
   width: 60%;
 }
 
-.button-container {
-  align-self: center;
-  padding: 5vh;
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  > div {
+    display: flex;
+    flex: 1 1 0;
+    padding: 3vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.right-container {
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.right-container .input-text {
+  font-style: italic;
+}
+
+.right-container .button-go {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+}
+
+.right-container .number-input-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.right-container input[type="number"] {
+  border-radius: 0.2rem;
+  font-size: 1.5rem;
+  border: solid 0.1rem black;
+  padding: 1rem;
+  width: 5rem;
 }
 
 input[type="button"] {
-  align-items: center;
   appearance: none;
   background-color: #fff;
   border-radius: 4rem;
@@ -52,10 +93,10 @@ input[type="button"] {
     rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   color: var(--main-color-black);
   cursor: pointer;
-  font-family: "Google Sans", Roboto, Arial, sans-serif;
-  font-size: 2rem;
+  font-size: calc(1rem + 0.75vw);
   font-weight: 500;
-  padding: 1.5rem 4rem;
+  padding: clamp(0.1rem, calc(0.1rem + 2.5vh), 2rem)
+    clamp(0.3rem, calc(0.3rem + 5vw), 4rem);
 }
 
 input[type="button"]:hover {
