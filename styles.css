@@ -16,18 +16,26 @@ body {
 @keyframes buttonAnimIn {
   from {
     border-radius: 1rem;
+    background-color: var(--main-button-color);
+    color: var(--main-font-color);
   }
   to {
     border-radius: 3rem;
+    background-color: var(--main-font-color);
+    color: var(--main-button-color);
   }
 }
 
 @keyframes buttonAnimOut {
   from {
     border-radius: 3rem;
+    background-color: var(--main-font-color);
+    color: var(--main-button-color);
   }
   to {
     border-radius: 1rem;
+    background-color: var(--main-button-color);
+    color: var(--main-font-color);
   }
 }
 
@@ -37,22 +45,24 @@ body {
   font-size: 2rem;
   font-weight: 700;
   align-self: center;
-  background-color: var(--main-button-color);
-  color: var(--main-font-color);
   border: 0;
   padding: 1.5rem 2rem;
   text-decoration: none;
   box-shadow: 0px 7px var(--main-font-color);
+
   animation-name: buttonAnimOut;
   animation-duration: 0.2s;
   border-radius: 1rem;
+  background-color: var(--main-button-color);
+  color: var(--main-font-color);
 }
 
 .main-button:hover {
-  color: var(--main-button-color);
-  background-color: var(--main-font-color);
   box-shadow: 0px 7px var(--main-button-color);
+
   animation-name: buttonAnimIn;
   animation-duration: 0.2s;
   border-radius: 3rem;
+  background-color: var(--main-font-color);
+  color: var(--main-button-color);
 }
