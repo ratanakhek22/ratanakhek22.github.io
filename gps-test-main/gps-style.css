@@ -112,11 +112,9 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-  color: white;
-  background-color: black;
+  background-color: #eeeee4;
 }
 
 input[type="button"]:active {
-  color: white;
-  background-color: red;
+  border: 0.1rem solid black;
 }
