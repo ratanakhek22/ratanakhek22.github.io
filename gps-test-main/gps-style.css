@@ -1,5 +1,5 @@
 :root {
-  --main-color-black: #3c4043;
+  --black: #3c4043;
 }
 
 * {
@@ -32,11 +32,11 @@ header {
   font-weight: 700;
   display: flex;
   justify-content: center;
-  color: var(--main-color-black);
+  color: var(--black);
 }
 
-.header-container {
-  border-bottom: solid 1px var(--main-color-black);
+.header-border {
+  border-bottom: solid 1px var(--black);
   width: 60%;
 }
 
@@ -55,8 +55,27 @@ footer {
   }
 }
 
+@media (max-width: 416px) {
+  footer {
+    display: block;
+    .left-container {
+      padding: 0;
+    }
+    .right-container {
+      padding-top: 0;
+    }
+  }
+}
+
 .right-container {
   flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.right-container .number-input-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -69,17 +88,10 @@ footer {
   padding: 1rem 2rem;
 }
 
-.right-container .number-input-container {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: 1rem;
-}
-
 .right-container input[type="number"] {
   border-radius: 0.2rem;
   font-size: 1.5rem;
-  border: solid 0.1rem black;
+  border: solid 0.1rem var(--black);
   padding: 1rem;
   width: 5rem;
 }
