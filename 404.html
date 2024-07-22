@@ -20,11 +20,17 @@
       }
 
       .container {
-        margin-top: 30vh;
         display: flex;
         flex-flow: column nowrap;
+        justify-content: space-around;
         align-items: center;
         flex: 1;
+      }
+
+      .text-container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
       }
 
       .main {
@@ -46,20 +52,18 @@
       }
 
       .image-container {
-        flex: 1;
-        display: flex;
-        align-items: flex-end;
-        margin-bottom: 10vh;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="main">
-        <div>Error 404</div>
+      <div class="text-container">
+        <div class="main">
+          <div>Error 404</div>
+        </div>
+        <div class="text">You have entered the wrong url/code</div>
+        <div class="text italic">Try again!</div>
       </div>
-      <div class="text">You have entered the wrong url/code</div>
-      <div class="text italic">Try again!</div>
       <div class="image-container">
         <img src="./favicon.jpg" alt="Image Placeholder" />
       </div>
