@@ -50,25 +50,20 @@ function updateMap(event, lat, long) {
 
 function getCoords() {
   switch (numberInput.value) {
-    case "1111":
+    case "12233123122331":
       // Library
       lat = 41.83363679847255;
       long = -87.62831367132178;
       break;
-    case "2222":
+    case "919834":
       // RE
       lat = 41.83691398732371;
       long = -87.6271764686111;
       break;
-    case "3333":
+    case "319273":
       // HH
       lat = 41.835635286934284;
       long = -87.62830984768145;
-      break;
-    case "4444":
-      // IIT Tower
-      lat = 41.831381461162294;
-      long = -87.62710161706971;
       break;
     default:
       lat = 0;
