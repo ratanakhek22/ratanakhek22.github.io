@@ -45,8 +45,11 @@
         }
       }
 
-      img {
-        justify-items: flex-end;
+      .image-container {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 10vh;
       }
     </style>
   </head>
@@ -57,7 +60,9 @@
       </div>
       <div class="text">You have entered the wrong url/code</div>
       <div class="text italic">Try again!</div>
-      <img src="./favicon.jpg" alt="Image Placeholder" />
+      <div class="image-container">
+        <img src="./favicon.jpg" alt="Image Placeholder" />
+      </div>
     </div>
   </body>
 </html>
