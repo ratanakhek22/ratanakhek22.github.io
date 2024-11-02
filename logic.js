@@ -301,6 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const lockBtn = document.getElementById("lock-btn");
   const scoreCounter = document.getElementById("score-counter");
   const betContainer = document.getElementById("bet-container");
+  const fileForm = document.getElementById("file-upload");
   
   lockBtn.addEventListener("click", () => {    
     if(square_bank.childElementCount == 0 || uploaded) {
@@ -308,6 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
       lockBtn.style.display = "none";
       square_bank.hidden = true;
       betContainer.style.display = "flex";
+      fileForm.hidden = true;
 
       console.log("Can Lock");
 
