@@ -1,0 +1,70 @@
+body {
+    background-image: url("../images/TreasuryBG.jpg");
+    background-size: 100% auto;
+    color: rgb(221, 221, 221);
+}
+
+#room-popup {
+    display: none;
+    height: 70%;
+    width: 30%;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgb(125, 103, 70, 0.94);
+    color: rgb(64, 53, 37);
+    border: 4px solid rgb(64, 53, 37);
+    border-radius: 60px;
+    padding: 20px;
+}
+
+#popup-btn {
+    font-size: 30pt;
+    padding: 10px 30px 10px 30px;
+    color: rgb(32, 32, 32);
+    background-color: rgb(171, 141, 96);
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+}
+
+#pedestal-item {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#door-item {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    /* border: 1px solid black; */
+    font-size: 28pt;
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+}
+
+#pic-frames {
+    border: 3px solid rgb(255, 217, 0);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18pt;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#lock-input {
+    font-size: 18pt;
+    text-align: center;
+}
+
+#flag-redirect {
+    display: none;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ESI-CS Syllabus</title>
+    <link rel="stylesheet" href="pagedesign.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+  async function downloadPDF() {
+    const container = document.getElementById('page');
+    const canvas = await html2canvas(container);
+    const imgData = canvas.toDataURL('image/png');
+
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF({
+        unit: 'px',
+        format: [canvas.width, canvas.height]
+    });
+    pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+    pdf.save('ESI_CS_Syllabus.pdf');
+  }
+</script>
+</head>
+<body>
+    <section id="page">
+        <h1>ESI-CS Syllabus</h1>
+
+        <h2>Topics Covered</h2>
+        <ul>
+            <li>General Computer Skills</li>
+            <li>Learning Basic Python</li>
+            <li>Strings</li>
+            <li>Math</li>
+            <li>Boolean</li>
+        </ul>
+
+        <h2>Assignments</h2>
+        <ul>
+            <li>Assignment_1_Variables</li>
+            <li>Assignment_2_Strings</li>
+            <li>Assignment_3_Booleans</li>
+            <li>Assignment_4_Ifs</li>
+            <li>Assignment_5_Nested_Ifs</li>
+        </ul>
+
+        <h2>Projects</h2>
+        <ul>
+            <li>Math Formula Scripts</li>
+            <li>Text-based Story</li>
+            <li>Circuit Simulation Lab</li>
+            <li>Micro Bits Lab</li>
+            <li>Final: Personal Project</li>
+        </ul>
+    </section>
+    <button id="printButton" onclick="downloadPDF()">Download</button>
+</body>
+</html>
