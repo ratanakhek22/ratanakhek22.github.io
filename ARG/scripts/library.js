@@ -59,5 +59,27 @@ document.addEventListener('DOMContentLoaded', () => {
     image.onload = () => {
         ctx.drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
     };
+
+    // lock logic
+    const inputs = [
+        document.getElementById("lock-input-1"),
+        document.getElementById("lock-input-2"),
+        document.getElementById("lock-input-3"),
+        document.getElementById("lock-input-4"),
+        document.getElementById("lock-input-5"),
+        document.getElementById("lock-input-6")
+    ];
+    const lock_submit = document.getElementById("submit-code");
+    lock_submit.addEventListener('click', () => {
+        let sum = 0;
+        for (let i = 0; i < 6; i++) {
+            sum += parseInt(inputs[i].value);
+        }
+        // console.log(sum);
+        if (sum == 690) {
+            // correct inputs
+            window.location.href = '/ARG/5123897311.html';
+        }
+    });
 });
 

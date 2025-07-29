@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>Library</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/library.css">
-    <script src="scripts/library.js"></script>
+    <link rel="stylesheet" href="/ARG/css/styles.css">
+    <link rel="stylesheet" href="/ARG/css/library.css">
+    <script src="/ARG/scripts/library.js"></script>
+    <script src="/ARG/scripts/popupbtn.js"></script>
+    <script src="/ARG/scripts/backbtn.js"></script>
 </head>
 <body class="roboto">
     <button id="back-btn">Back</button>
@@ -14,7 +16,10 @@
         <h1>Library</h1>
         <p>
             In the center of the library is a table which replicates the night sky and its stars.
-            Looking through the books, you find one on constellations.
+            Looking through the books and shelves, you find some tools and instructions.
+            You see a chest with a lock on it taking 6 numbers as input.
+            Your only clue on how to open it on a note:
+            <a href="/ARG/files/star_note.txt">Star_Note.txt</a>
         </p>
         <button class="roboto" id="popup-btn">OK</button>
     </section>
@@ -26,7 +31,16 @@
         </section>
 
         <section id="tools-item">
-            <h2>Book</h2>
+            <a href="/ARG/files/star_compass.zip"><h2 id="item-text">Items Found</h2></a>
+            
+            <h2>Chest</h2>
+            <input type="text" class="roboto" id="lock-input-1" name="lock-input-1">
+            <input type="text" class="roboto" id="lock-input-2" name="lock-input-2">
+            <input type="text" class="roboto" id="lock-input-3" name="lock-input-3">
+            <input type="text" class="roboto" id="lock-input-4" name="lock-input-4">
+            <input type="text" class="roboto" id="lock-input-5" name="lock-input-5">
+            <input type="text" class="roboto" id="lock-input-6" name="lock-input-6">
+            <button id="submit-code">Submit</button>
         </section>
     </div>
 </body>

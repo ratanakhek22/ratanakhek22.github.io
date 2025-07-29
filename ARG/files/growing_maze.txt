@@ -1,0 +1,36 @@
+Welcome to the never ending, Growing Maze.
+From the name, you will never find a dead end and instead
+the walls will lead you further and further away from the exit.
+
+Fortunately, you have this note, explain the rules and ways around the maze.
+Unfortunately, the person who wrote this note is not very straightforward.
+
+Maze Rules:
+1. The path to the exit has a total of IX intersections, no more no less.
+2. You will magically leave the maze anytime if you just go backwards 3 times in a row.
+3. To begin, start your step count at 0, after choosing a direction, increment it by 1.
+4. To clear the maze you must follow my instructions precisely.
+
+---------------------------------------------------------------------------------------
+direction = back
+
+    if flowers are not red:
+        direction = left
+        if flock is at most 2:
+            direction = forward
+        if your step count is a multiple of 3:
+            direction = right
+
+    if flowers are not blue:
+        if direction == left:
+            direction = forward
+        if your step count is even:
+            direction = left
+        if your last step was left:
+            direction = right
+
+    if flock is greater than 3:
+        direction = forward
+            
+
+    

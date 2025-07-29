@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Growing Maze</title>
+    <link rel="stylesheet" href="/ARG/css/styles.css">
+    <link rel="stylesheet" href="/ARG/css/maze.css">
+    <script src="/ARG/scripts/maze.js"></script>
+    <script src="/ARG/scripts/popupbtn.js"></script>
+    <script src="/ARG/scripts/backbtn.js"></script>
+</head>
+<body class="roboto">
+    <button id="back-btn">Back</button>
+
+    <section id="room-popup">
+        <h1>Growing Maze</h1>
+        <p>
+            In front of you is a the rumored growing maze. Supposedly, its walls shift and grow endlessly,
+            no dead ends, only more branches. There is only one person that has made it through and they have left
+            a note explain the maze to all who seek to challenge it.
+            <a href="/ARG/files/growing_maze.txt">Growing_Maze.txt</a>
+        </p>
+        <button class="roboto" id="popup-btn">OK</button>
+    </section>
+    
+    <div class="section-container">
+        <section id="" class="section-item">
+            <div>
+                <button id="forward-btn">Forward</button>
+                <button id="backward-btn">Back</button>
+                <button id="left-btn">Left</button>
+                <button id="right-btn">Right</button>
+            </div>
+            <div>
+                <h3>Room Details</h3>
+                <p id="room-details-flowers"></p>
+                <p id="room-details-flock"></p>
+                <p id="room-details-alert"></p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

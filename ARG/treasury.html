@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>Treasury</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/treasury.css">
-    <script src="scripts/treasury.js"></script>
+    <link rel="stylesheet" href="/ARG/css/styles.css">
+    <link rel="stylesheet" href="/ARG/css/treasury.css">
+    <script src="/ARG/scripts/treasury.js"></script>
+    <script src="/ARG/scripts/popupbtn.js"></script>
+    <script src="/ARG/scripts/backbtn.js"></script>
 </head>
 <body class="roboto">
     <button id="back-btn">Back</button>
@@ -26,21 +28,26 @@
     <div class="section-container">
         <section id="pedestal-item" class="section-item">
             <h2>Pedestal</h2>
-            <a id="pic-frames" href="images/9_Pictureframes.zip">9 Picture Frames</a>
-            <img src="images/tablet.png" width="400" height="400">
-            <!-- A J U -->
-            <!-- N F O -->
-            <!-- T R M -->
+            <a id="pic-frames" href="/ARG/images/9_Pictureframes.zip">9 Picture Frames</a>
+            <img src="/ARG/images/tablet.png" width="400" height="400">
         </section>
     
         <section id="door-item" class="section-item">
-            <h2>Large Door</h2>
-            <a href="1902384958.html" id="flag-redirect">Get Flag</a>
-            <img id="door-img" src="images/placeholder_door.jpg">
-            <h2>Plaque</h2>
-            <!-- Fortuna Major -->
+            <div id="f-box-1">
+                <div>
+                    <h2>Large Door</h2>
+                    <a href="/ARG/1902384958.html" id="flag-redirect">Get Flag</a>
+                    <img id="door-img" src="/ARG/images/placeholder_door.jpg">
+                </div>
+                <div>
+                    <h2>Plaque</h2>
+                    <img src="/ARG/images/plaque.png" width="350">
+                </div>
+            </div>
             <h2>Lock-Input</h2>
             <input type="text" class="roboto" id="lock-input" name="lock-input">
+            <button id="submit-password">Submit</button>
+            <p id="hidden-msg">Psst... Every heard of a Palindrone?</p>
         </section>
     </div>
 
