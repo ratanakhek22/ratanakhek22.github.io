@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     // wrong way
                     let rng = Math.floor(Math.random() * 3);
                     let clr = ''
-                    if (rng == 1) {clr = "White"}
-                    else if (rng == 2) {clr = "Blue"}
-                    else if (rng == 3) {clr = "Red"}
+                    if (rng == 0) {clr = "White"}
+                    else if (rng == 1) {clr = "Blue"}
+                    else if (rng == 2) {clr = "Red"}
                     room = {
                         flower_color: clr,
                         flock_count: Math.floor(Math.random() * 5),
