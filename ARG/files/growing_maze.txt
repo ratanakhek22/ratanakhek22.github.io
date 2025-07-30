@@ -9,19 +9,18 @@ Maze Rules:
 1. The path to the exit has a total of IX intersections, no more no less.
 2. You will magically leave the maze anytime if you just go backwards 3 times in a row.
 3. To begin, start your step count at 0, after choosing a direction, increment it by 1.
-4. To clear the maze you must follow my instructions precisely.
+4. To clear the maze you must follow my instructions precisely for EACH room.
 
 ---------------------------------------------------------------------------------------
 direction = back
-
-    if flowers are not red:
+    if the flowers are NOT red:
         direction = left
         if flock is at most 2:
             direction = forward
         if your step count is a multiple of 3:
             direction = right
 
-    if flowers are not blue:
+    if the flowers are NOT blue:
         if direction == left:
             direction = forward
         if your step count is even:
@@ -31,6 +30,7 @@ direction = back
 
     if flock is greater than 3:
         direction = forward
-            
+
+Turn in the direction.
 
     
